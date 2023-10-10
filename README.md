@@ -17,8 +17,7 @@ The specific challenge is the lack of documentation on how to access the FRITZ!B
 
 ### Prerequisites
 
-1. **Network Diagram**: Maintain a detailed network diagram outlining device interconnections.
-2. **Identify RTP Ports**: Ascertain the range of RTP ports used by the FRITZ!Box for IPTV streams.
+**Network Diagram**: Maintain a detailed network diagram outlining device interconnections.
 
 ### OPNsense Configuration
 
@@ -42,8 +41,8 @@ The specific challenge is the lack of documentation on how to access the FRITZ!B
      - **Interface**: Interface connecting to the FRITZ!Box
      - **Protocol**: UDP
      - **Source**: FRITZ!Box IP address
-     - **Destination**: End devices or network segment
-     - **Destination Ports**: RTP port range
+     - **Source Port Range**: 5000-5010
+     - **Destination**: Your LAN Net
    - Save and apply the configuration.
 
 4. **One-to-One NAT**:
