@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:61a602c306cb47132b023aa88ff4f59f328dc3c6d89d1a4366007c7346f4bcf3",
+  "claims": [
+    {
+      "id": "claim_0aaff334f8b545cea790fabed45e6e47",
+      "statement": "The repository holds two completely unrelated concerns side by side: README.md is a self-contained network runbook for accessing FRITZ!Box 6591 Cable IPTV streams through an OPNsense firewall, while slugify.py is a standalone text-utility module; nothing in one domain references the other, and the only internal dependency edge anywhere in the repository is test_slugify.py importing slugify.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L1-L74",
+          "version": "repo-lines-v1:sha256:4743fcfac58bedaf21cb6e440e907693c462e2e02e97434aec1222a26536e5d4:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyN2I0YzdlN2U3ZjRiNGEwNjU4YzU5YmY5ZGJhNTM3ODQ2ZDE0NjZmZDMyMTM3NzM1OTY5MDRlYjY4ZDNmYjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyMTllYzZhNDllYTVjMDk3MDYxMTI1Y2VmMWNmYjFkNTVhNDM5MGQ4NzNmOTVkODZhOWFjYjNjM2FmOWYzNmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://slugify.py#L1-L51",
+          "version": "repo-lines-v1:sha256:01810151122a7f58d2d4d0ec5edaf505f195d71de910b66709b4f40b15b20733:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJmOWFlNWNjMmM5ZGM3MTU2YzkyZTVhYzQzZDk0MjBhMmFlMmQyZDYyOWQ0ZTdhZjVjOTc5NDAwYzVmOTQxNzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2YTgyNjU0ZjE0YTIwN2UxZWZjODUzZDYyYTAzYWE2YzIyNWIxZmIzYjRjNjhiZTAxNDRiZjgzMzNiY2Q4ZjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://test_slugify.py#L1-L84",
+          "version": "repo-lines-v1:sha256:ec472422bf4a09327456ff733f6abb70837bc4de3b0022197ec4c8439218af06:eyJzZWxlY3RlZExpbmVDb3VudCI6ODQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ODI3YmJjYmY2NjBhYTA4NTM4NTdlZDA3NGUxYWUwMTc3OWU1Mjk3NTI4NDhhMzgxZmZhMTJmMmExNTA4OTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE1ODNhY2FmNzRmYjMzOTFiMDU2MTY3OTNiZTdiMTEzOThkNjA2NTIzY2Y2ZmUxMzVhY2I1MzgyOThjZDAxMWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a38ccba6c528457cafda58784e62735b",
+      "statement": "pytest test_slugify.py is the minimal test command to validate changes: test_slugify.py is the repository's only automated check, imports the helper directly (from slugify import slugify), and runs via pytest.main when executed as a script, so no build step or dependency installation beyond pytest is involved.",
+      "evidence": [
+        {
+          "resource": "repo://test_slugify.py#L1-L10",
+          "version": "repo-lines-v1:sha256:d9d9d1c7ce43de0ecdde92ab52ff3dc3e5db44488bc5e31f94babc11ab147324:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ODI3YmJjYmY2NjBhYTA4NTM4NTdlZDA3NGUxYWUwMTc3OWU1Mjk3NTI4NDhhMzgxZmZhMTJmMmExNTA4OTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIwOWUxMmFjMzgxODdiYzljOWQwMTc3ZmIzNzQ4NDdjOTVhOWMxN2EwOTI4N2E4NTc2YjI3MDZjZDJkYTA3ZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc1YjM3OGFmZDFlNTZiOGI3YTU4YmNhZGYxYjE3YTk4Mzg4N2FkN2E2NDQ4ODlmYWU3ZDAyMzRiNzc3MmU0ZTcifQ"
+        },
+        {
+          "resource": "repo://test_slugify.py#L81-L84",
+          "version": "repo-lines-v1:sha256:6bdf362530b304db6287d55264f632897404a5beff5c1678cb3f8c0cef207dbe:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTU4M2FjYWY3NGZiMzM5MWIwNTYxNjc5M2JlN2IxMTM5OGQ2MDY1MjNjZjZmZTEzNWFjYjUzODI5OGNkMDExYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDQ5MmM0NjhiYTE1NmFlNDU4N2Q5MTFhMDMxZWEwODIxYTM1ZmU5MjNjZmZiMDFhMDMwNzY0MDgwOGVkOTM5YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_44f3a5c5ea61404eac34aff6e5a8d1a1",
+      "statement": "README.md is the repository's primary artifact and is a networking guide, not code documentation — agents should not expect a build system, CI, or dependency manifest; the slug utility is standard-library-only (imports just re and unicodedata), which is why the test suite runs with no installation step.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L1-L10",
+          "version": "repo-lines-v1:sha256:87a8d4d381fb0ebe579bffda0f54ab76ac91ca172a095001c8f077808a57c4de:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyN2I0YzdlN2U3ZjRiNGEwNjU4YzU5YmY5ZGJhNTM3ODQ2ZDE0NjZmZDMyMTM3NzM1OTY5MDRlYjY4ZDNmYjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkzZjI0MmMxMjI2NjM2OTczN2E5YzRkYzk0YzM1YmJiZjlhMGQ1NGEzMjI5NzYzNzJjYjZhN2NmOGIwOTNkMGMifQ"
+        },
+        {
+          "resource": "repo://slugify.py#L1-L2",
+          "version": "repo-lines-v1:sha256:8be528867411def215b1e84386c7186c927b4aaca3e695bcc5d90c92dac6a0fd:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmY5YWU1Y2MyYzlkYzcxNTZjOTJlNWFjNDNkOTQyMGEyYWUyZDJkNjI5ZDRlN2FmNWM5Nzk0MDBjNWY5NDE3MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzEwOTRkZTQ4Y2M1YzlhYTczYjgwZDhjZTY1MTljNjVhYWJhNDQ1ZDcyMzc1NTZjOWZkNjk5MTEzNDdjZTU2YiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_6e1aabf03a234221a6fa5564394f6845",
+      "statement": "Per AGENTS.md, source code and tests are authoritative while the generated openwiki/ pages are optional just-in-time context rather than required startup reading, and validation should use the narrowest quiet check that proves the changed behavior with complete failure output preserved.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L5-L13",
+          "version": "repo-lines-v1:sha256:3190b4f90be816a477cd3b6158fd9fdccf1fbbbb99cd14e5eb7d77e3c450b994:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWRiNDYwNjYwZjRkNTBhMjVhY2E3Nzk2MTAwMmQzOTcwNWM2NDZkYzI2YThiZmE2NmFlNmY2OTA5NTljNjk1MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWFmYjk2MDZmNWIwZDhmNjM0YjI2MDM3OGQ2ZWNlMjUzYjVjMTQ0N2E5YmYxZDA0OTM0OTQ0MGE4YjVlYmYwOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODY1MjVmNTE0ODk5NTZiNWI5MjRmN2FmNGYyYWU2YWNkODQxYjc3ZGYxNmRkOGVkMWViZWUxMDVhOGNmY2QxOSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.3",
+    "at": "2026-11-02T19:30:23.660Z"
+  }
+}

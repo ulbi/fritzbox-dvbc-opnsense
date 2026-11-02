@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:e57f5df29ef6759b4594306ca02ce95eb38ce7a1ad6a8fb684504f2a5777e836",
+  "claims": [
+    {
+      "id": "claim_e0005baa81c8456bb9986cebe0ed4311",
+      "statement": "test_slugify.py is the repository's only automated check: a single pytest file with one TestSlugify class of twelve hand-written test methods that import slugify() directly and verify it with plain assert statements (no fixtures, marks, parametrization, or plugin configuration), and nothing else in the repository calls slugify() or runs tests.",
+      "evidence": [
+        {
+          "resource": "repo://slugify.py#L3-L7",
+          "version": "repo-lines-v1:sha256:62734e13dc58e8f08b57069b6c6fad694124b13a18819a38a74f9975e808855b:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTgzMDMzMzMxMmM0YzljMjIzM2JiMDI3NjJiZDQ5ODIwM2IxYzNiZjA1Mjc2MTQ3MzU2OTNiNGI3OWY2ZDE2NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDE5Yzc5MDg0YzhiMWU1MGJiNzEwMjdhYTQ5M2EzNTJmODAzYjFlNTQ3YzBmYTE5MmYyOTE2NDI5OTQ1ODg3MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOGJlNTI4ODY3NDExZGVmMjE1YjFlODQzODZjNzE4NmM5MjdiNGFhY2EzZTY5NWJjYzVkOTBjOTJkYWM2YTBmZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGRhZjI0MDZhZWNhMzI3ZTIzMDM0NGEwNmEzNjM4NDk1NjMyMjVjYmJmMTcxYmM2NTAyMTZhMWEyNWFjYzBiYiJ9"
+        },
+        {
+          "resource": "repo://test_slugify.py#L3-L7",
+          "version": "repo-lines-v1:sha256:29e21cfaf945f1f7d915f660bb55f4738b20e107bf1fdb1f39eac061212344f5:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjc1YTgzMDJjNjIxOTA3NDZjZDhmYzIyOWM2MTg2ZjExZmI1MzE0MjE4YjIwZDFiNzQyOTIwMzAxYTQ5NWI3NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGJkMmJmYjdjMWVjNzUxMTg4Yzg1OGEwOGQ3ODQ2ZDkwMzU5NzMyMjE3NThjNzdhNmU1ZWMzMzJjMjNmNzYxMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWI5NzU1NTg1MmI3NDAzOTFmNjRkMmE4ZWY3NzQ5MzkxYjg0NDRlNmU5YjI4YWJlODVhMzRlZWI5MzUxYTk1YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTA0YTM2NmYyMjQ3NDhiYTJjZDVhNTdkMDZjMTRjOWEzNzg3MDZlMjVlZDBkMzkxYWZjNTlmMmE0MDI1MjY5NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_0772aec8b06941e89cbf781d7db51f20",
+      "statement": "The suite runs with `pytest test_slugify.py` (optionally `-v`) from the repository root; pytest is imported directly with no requirements file, lockfile, or pytest/pytest.ini/tox configuration anywhere in the repo, no CI hook runs the suite automatically, and an `if __name__ == \"__main__\":` guard calling `pytest.main([__file__, \"-v\"])` also allows running the file directly with python.",
+      "evidence": [
+        {
+          "resource": "repo://test_slugify.py#L3-L3",
+          "version": "repo-lines-v1:sha256:675a8302c62190746cd8fc229c6186f11fb5314218b20d1b742920301a495b75:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjc1YTgzMDJjNjIxOTA3NDZjZDhmYzIyOWM2MTg2ZjExZmI1MzE0MjE4YjIwZDFiNzQyOTIwMzAxYTQ5NWI3NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjc1YTgzMDJjNjIxOTA3NDZjZDhmYzIyOWM2MTg2ZjExZmI1MzE0MjE4YjIwZDFiNzQyOTIwMzAxYTQ5NWI3NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWI5NzU1NTg1MmI3NDAzOTFmNjRkMmE4ZWY3NzQ5MzkxYjg0NDRlNmU5YjI4YWJlODVhMzRlZWI5MzUxYTk1YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjNkZTFiNDE5MTY1MTIwOTgyNTlmOGYzMTZhZGIxN2YzZGJkYjc5YWRjMDY1ODRkYjA0ZjJlMDZiMjgwY2IzZSJ9"
+        },
+        {
+          "resource": "repo://test_slugify.py#L83-L84",
+          "version": "repo-lines-v1:sha256:c7125547d4d0106c06b1e4004ab08cde62c3d04c2c97e1312ec35cea69b701eb:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjQ4NmZmNWNmOTM2M2I0NDI5MzM2ODAzYjJjOTYwZTczZGE4YzQ3ZmEwYzZmNjc2NThkMTRiMzIzY2QyMmQzNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTU4M2FjYWY3NGZiMzM5MWIwNTYxNjc5M2JlN2IxMTM5OGQ2MDY1MjNjZjZmZTEzNWFjYjUzODI5OGNkMDExYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGU5OTQ0YTliMzM5OGJhZDZlNmMwMGU4NjY5NjUyNjI2NjIyNDlkOWJiNGFlZjRhN2YyNTVkM2I5YjdhY2MyMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_94b05b12d7534f8b8a3c0efa4a90a4ef",
+      "statement": "test_umlaut_transliteration and test_sharp_s_transliteration pin the seven-entry German transliteration map (ä→ae, ö→oe, ü→ue, ß→ss, Ä→Ae, Ö→Oe, Ü→Ue) and its ordering before NFKD/ASCII normalization: if normalization ran before the map, Müller would degrade to muller and these assertions would fail while accented-Latin tests kept passing.",
+      "evidence": [
+        {
+          "resource": "repo://slugify.py#L24-L32",
+          "version": "repo-lines-v1:sha256:ddbbd3904ec8e8f0bcc1128b0673935c97e2d2529429f476fbeea09481a3869f:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWY1YWVkNGMzOTg1OGZlNjIyNWJjMTU0ODBkYzhlNjFhMzQ2ZTViZjYxZWNhMGU3ZWMxNWFkYzQyYWM4ODQyZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDg5M2Y0MGUzNzgxZWI4OTZjODJkMDQ2YTA4MDY3YTExZTM1Y2RmMmYxZGZhZjI2ZmVhOTBiOGRiNjY3NjQxMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDA0YjEzYjU2MjkyMjI0MzUyOGZjZjMxNDJmMDg1YWIzZjhkOTY4ZGIyNDUwZTYyNTg0ODc2OTFmZjQyNjRjNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDBmODVjYjQ5MmVjMzZlOTA2NmJhNzBlZmY5ZDdjYTUzNjNhZmU4N2I0NjIwY2RkYmE2MDg1YWQ1MDA0NjVhNiJ9"
+        },
+        {
+          "resource": "repo://slugify.py#L38-L40",
+          "version": "repo-lines-v1:sha256:5365367d2ff25d6f45e9433ceab49165b7fc51cdfdc3b99774c50c27fc5ab262:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTBiY2Y4NGFhMTdlZjJiNWZjMTJkZmViYmE3M2ZiOGJmZTY1YTdlNjM3NmMzZjdmNzJlOWM0OTI5Y2YzZjE0ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDg0YmMyN2RjNzZkODJmNWIyZjY5Y2VlMzI4ODI4ZjA1NjBmYmRjMDA3MjZhYWE0NGJhMmIzZDFkMzExYTY5ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjg1M2Y4YTE3MmQ5MmMzYTlkOWRkODdjM2QwYTA4ZmJjYWY2MGU0OTE2NmQ4YTliZTZjYTc5NjI5OTZlOGQ1ZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODk2NmY5MDM4NDVhYzI5ZjZlODU5YmNlYWY5MGNhNWYzMGViYThkMTY0Mjg1ODI4OTY3ODViMWM4Y2U4OWQ4MSJ9"
+        },
+        {
+          "resource": "repo://test_slugify.py#L16-L29",
+          "version": "repo-lines-v1:sha256:d48bca6ef6911a0563bbee4d74bbcd3f7402f67632e1e8c1034e36f4d5396fc9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1YWQxN2FjOTczZWYxZmZkYjBhYTYyNDdjMWVjYzZmOTNlMTliNmQ1NjkwZDFkNjhhNjgxMzQ0OTVlOGE1OGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwZmRiYzg0NGM1Zjk0OTE3MTNlNzdhODAyZTU4ZWE4NDQxNGZkZjhiYmVlZDRkMTAwMjliOGQyYWNiOTJjMTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQyNTg3ZTcxMjE0OWYwMmVhNTg2OGFmYmZmOGI3M2VkYmU5NWMyZWU1ODk5ZTNjNjBiMDM0MTMwZDYyY2U0NGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0ZDIzNDAyMmI1OWU1ZTA0MDE3Y2Q4OTZkOWYxMzEzOTdhYzM5MWJlZjQ2OTNmMGEzZjA4ZjE1ZDVjZTI5Y2EifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0cab8cee55b348838feaafcf94b23851",
+      "statement": "test_mixed_case pins the transliteration map's case handling by requiring uppercase umlauts to produce the same lowercase output as their lowercase counterparts — slugify(\"MÜLLER\"), slugify(\"müller\"), and slugify(\"Müller\") all equal \"mueller\" — which depends both on the uppercase map entries (Ä→Ae, Ö→Oe, Ü→Ue) and on lowercasing running after the map (the uppercase entries expand to capitalized forms like Ue, which only the lowercase stage folds to mueller).",
+      "evidence": [
+        {
+          "resource": "repo://slugify.py#L29-L31",
+          "version": "repo-lines-v1:sha256:4c2e487c573cf7dd70019844e4a1ffef1bf165e385748eee16902bfca6e60381:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTgyYTAyMDZiYzM2ZDM4YWE4M2JkNzY3YTEyMjQxODgzMTQ3N2E0OTk4OGVhZmFhZjhhNDhlNDg3YjhlOTNkMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmIzMTM0NTNjNGVmZmI1M2ZlODU3ZGQyYmNjNzhjNjcxZDllMmQxZDVhNDYyYjgzNTM3MDY5YjY2MzI4N2NhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWZmMjI5MzYxOTYyMWRjODA1OWRkZDk2MjIzM2IyZmMwZGE4N2ExM2I0OGMyNmFiYjQxMGJiNTA3OTMzYWJmNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDNlZDViNDdmNjVhY2I1NWNhNzQxOGJiYTBiNjhkYTFhYTc5NTlmMGM3NjA2ZGZjMTAxYWQ2YzRlNWQ0MzBmMCJ9"
+        },
+        {
+          "resource": "repo://slugify.py#L42-L43",
+          "version": "repo-lines-v1:sha256:08b4cd5db8632c826012daecadd5b4e08946ccb57a0045036b3e758b7efaccad:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzA3NmI1MzIyZmNlZGY2N2E3NmQwZjBjNzVkY2U1NTcyZDZkMzllNmNjZGM0OTVmYWExZWE2MmIyZjI4MmU3ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTA2YTgzN2IyZDViNTA4NTNhNGYyYzdkYjEwZDkwYzE2NmRlZTIwNTdiN2MxNTQ0NWRjMjA4NDgyNDJkODA0OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODRmMGU2Y2RhZDUwMjg3Yjg1YjFiNGMzNTQyMjM4YmYyNDBjYTk3ZTVmZTQ3NTA5NjEzYmViMWY2MDQ3OTA2MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTFiN2JlMmM0ZjdmMThlZDc3NTJiNjFjNDAzYmMyNDBmZDA1MTFjY2EzNjgzYThlNjA0M2NmYjNkNDhlMTcyYSJ9"
+        },
+        {
+          "resource": "repo://test_slugify.py#L31-L35",
+          "version": "repo-lines-v1:sha256:7ee295d23b04c98239f4781caed361ee82b820eda3f96d08ab7784dadea7bf3e:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTgyOGYyOTRhODdlZThlNGZkZDQzYmFlZWI5MjM0ZjBjODg2OWQyNzU0ZmM0N2I3NDNhMTEzN2FjYTI3NTIzOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjgyYzk1ZjRjYzhhMTdjNjVkYjM0NWI2YTgyNjM3ODFmM2IxYzU1YzA5ZDRlMWE5M2JiM2Q5MzRkZWQ0ZWVkNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjc5ZTNmYWQ1MDg1ZTQyNDA3NjJiYjBkMDk1NDg5NGE0ZjMxODMzM2JjNDY4MzI4YmJhZWVmZWEyNmMzOWZkYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTI5NDUxOTk5YzE3OThjNDEzOTBkZWYyN2MyNWFlM2NjNTgyZmU1YmU0YmUyZmRlOTlkNWVmOGMyZDc3OWU1ZSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_4742b2894c7f4cc5892a9f2946003bb9",
+      "statement": "test_unicode_normalization independently pins the NFKD/ASCII-ignore stage for accented Latin text — café→cafe, naïve→naive, résumé→resume — and keeps passing even if the transliteration map were reordered or emptied, because these inputs contain no umlauts; it is the group to update when the normalization step itself changes.",
+      "evidence": [
+        {
+          "resource": "repo://slugify.py#L38-L40",
+          "version": "repo-lines-v1:sha256:5365367d2ff25d6f45e9433ceab49165b7fc51cdfdc3b99774c50c27fc5ab262:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTBiY2Y4NGFhMTdlZjJiNWZjMTJkZmViYmE3M2ZiOGJmZTY1YTdlNjM3NmMzZjdmNzJlOWM0OTI5Y2YzZjE0ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDg0YmMyN2RjNzZkODJmNWIyZjY5Y2VlMzI4ODI4ZjA1NjBmYmRjMDA3MjZhYWE0NGJhMmIzZDFkMzExYTY5ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjg1M2Y4YTE3MmQ5MmMzYTlkOWRkODdjM2QwYTA4ZmJjYWY2MGU0OTE2NmQ4YTliZTZjYTc5NjI5OTZlOGQ1ZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODk2NmY5MDM4NDVhYzI5ZjZlODU5YmNlYWY5MGNhNWYzMGViYThkMTY0Mjg1ODI4OTY3ODViMWM4Y2U4OWQ4MSJ9"
+        },
+        {
+          "resource": "repo://test_slugify.py#L65-L69",
+          "version": "repo-lines-v1:sha256:02fe7cfa77c3c417a62083441d0e4dace86bc112f4a9dd6310ea5270f6c9dcec:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGJiYzdhZTNhY2RlYWU0ZDBkNzAyODM5ZTI0OTY4MzJkODY1N2I1MDkwMWVlMzI4ZDAxODA1MDUwNDNhMjkwNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZGYzODExMzE3YmIyMzc1NjRiYzdkMWU4ZTJmYTZhNzQ4NjA0ODAxNzhhODIzODFmOWE5MzgzMGI5ZDYwMjNkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTg4ODQ4NDFjNjcyMzkzN2Y3YmJjNjIwZGI1NjZhMjM2MzIxMzdkMzZjNzI2ZmJlMDgxOGEzOTg1NDlmMzg1MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDJjZDZjYjBlMDExMTMwZTI2MDhiMDUzMWE0YTU2NGQ0N2Q3MzJlNDkzYWMzMTQ1YTQxNWIxY2ZjNTZkOWFhYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_97f86d4bafc5490893eb8de97895d40a",
+      "statement": "The empty/special-only group (test_empty_string, test_only_special_chars) plus test_no_leading_trailing_hyphens guarantee the output is never a bare \"-\" or punctuation-only slug: \"\", \"   \", \"@#$%\", and \"!!!\" all return \"\" (empty input short-circuits at the guard; whitespace/punctuation-only input collapses to one hyphen that trim removes), and boundary separators (-Hello-, ---Hello---, \" Hello \") never leak into the output.",
+      "evidence": [
+        {
+          "resource": "repo://slugify.py#L20-L21",
+          "version": "repo-lines-v1:sha256:59fdbb1a5af9b3564651b51afe47fe2941712316a0885a16d9f18eff0ff95c71:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTQwOTEyMWM4YzJkNjA2MDcxYjQ5ZDJmYjNmZDU0M2QyNDBlNGRkOTNiZmRkOTIxZGEwNjc2OWU2MzVhZWNmZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2VhYWFjN2I5NWQ3MDM1YzJhMTJjZGM3MzJlNzhjMDcwZDAwNDhkMDljYjVjODI2YjFmN2Q2ZWVlYjFmNjVlNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDFhZWZkMjYxYzk1OTU0ZWQ4YjU4OTNmMGFkNjFiNTdjNmIwZmEwYTk3MDE1Zjg2ZjkwOTFmYzg1OTczOTRmNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTcyMTNjM2RmMzk5MWFjMTFlYmFkNDk3MWVlNTczMWMyNTYwNDNhMDEwMmJiMGIwNjM1OTM4YzI3Y2Y2NzNmZCJ9"
+        },
+        {
+          "resource": "repo://slugify.py#L48-L49",
+          "version": "repo-lines-v1:sha256:da6a67ab9d8d56e2c6b65050859456131337a42341cbd9dcc9722213a6d9bdd8:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDRmYmM0NzY3NDFmOWVjZTE0NTJjOGMwNDJkYzc3YTQ0NmZlOGVmYmRkMGQ0ZjlkOTBmZDQxMTk1NTdhZGY4MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTQ5ZjFhOTg0NTBiODBiZDE4MzQ1OTJmYjJkYWIzYjQ3ZjM0ZGJmZjNkMTM3ZmM4MTY2MDVmOTI2MDhmNjEzMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjE1OTQyM2VmZDliM2Y1MzRlNTgxYzgyNTFmMzc2NzlmZmJiYTFiNTdkZTgzNjU2NTg0YTkwYjhmY2ZlN2M2YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDA0MzY2MGYzYzJmNzZkNDVmM2M5Mzg5MjJjOGQ2ODQ3ZjVkNWIzODUzZjYxMTVkZTZiZGQyNzc0M2I1MGQwMCJ9"
+        },
+        {
+          "resource": "repo://test_slugify.py#L55-L63",
+          "version": "repo-lines-v1:sha256:7024c2964a6ca337bc87783e0e4aa8a3edd5631834f8d2d016e43661b21100f3:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWJiNTc5OTU0NTBjZjIzODQ5YmE3ZGQ4YTJlZTExN2U0NjEzMTk4YmVhMTQ4NDNjZGU0ZTdlYWUyODRjZGRiOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZGRhYmEzY2RlOTJlNmI5MDJlMTQwNmIyMWVjZTEwYTE3N2FmZWExMjFiM2JkODFlMDMzNzk1YzUwYzU5OTgzMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNWNhZGM1MWY2YTAxYWE2OWFjYzA1ZmZhNTA5ZDAwM2RiNDIyYWQ4ZDQ3NzkxMTI5NDE5Yjk1ODhiZjI0MjYwYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWE5NjIyMDNkYTE1ODBhNDkwYzdmNzNhNDA3MDExODE3NjlkZWVlNDQ4YjYwMGZjMmI3ZWIzNDI3ZTZjMDA2OCJ9"
+        },
+        {
+          "resource": "repo://test_slugify.py#L71-L75",
+          "version": "repo-lines-v1:sha256:744aac91ea74dc336f33e4bcafe60322baed17cce2717fb00ebd9db386648c99:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmIyNDAxZjAwOTg3MmRhYTE5OTM4MzE4NmRhNjI0MGE0ZWZhZmJmYTNiODFmODcwZjQyODIwMDhhYjgzYzI0MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmExOGYyM2QyOWY3ZWNkOWMxZDhlYzcwMTAwMDVhMGUwZWU2NWFlM2JjMzMzYWUwZGVmYmQ4MjliODU2NWI1NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTVjMDQ0OGRkZGJiOTZlZmZiMjRmZjQxMWRmOGM5Mzc2MmYzZTFlNGQ2OWVjMjcwYjk2ODRhNGE0MmZiNjYxMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjc4MDlmMmQ3ODgyMWJhMWZhMjE5OGRhZWU1ZTZkMzIyNzI3NzI5NGM4ZDMxYmI3ZTE0MzcyOTI2NmZhYzU1ZSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_d3b8fdb6bbb343ffb05560491d3577b0",
+      "statement": "test_already_slugified pins idempotency — slugify(\"hello-world\") and slugify(\"already-a-slug\") are unchanged — because every pipeline stage is a no-op or fixed point for slug-shaped input, so re-slugging stored slugs is lossless; this is why the idempotency group depends on all pipeline stages.",
+      "evidence": [
+        {
+          "resource": "repo://slugify.py#L20-L51",
+          "version": "repo-lines-v1:sha256:b066a85bb1b639beebd235db727778e708e02e79a05db0d2327811a9f42558f1:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MDkxMjFjOGMyZDYwNjA3MWI0OWQyZmIzZmQ1NDNkMjQwZTRkZDkzYmZkZDkyMWRhMDY3NjllNjM1YWVjZmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2YTgyNjU0ZjE0YTIwN2UxZWZjODUzZDYyYTAzYWE2YzIyNWIxZmIzYjRjNjhiZTAxNDRiZjgzMzNiY2Q4ZjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxYWVmZDI2MWM5NTk1NGVkOGI1ODkzZjBhZDYxYjU3YzZiMGZhMGE5NzAxNWY4NmY5MDkxZmM4NTk3Mzk0ZjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://test_slugify.py#L77-L80",
+          "version": "repo-lines-v1:sha256:983748a52ea93bc2682325ad1fc1112b07ac0ce17735ad49096ebdf81a51d328:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTgzMTViNzFlNjY3MTU3ZjJkNjU0MzVhMzU3OGY5YTJjODA5OTkwMWZiNjBkMTk2NWQ0ZTA0NDhmMzliOTVlYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmYxYWVlYTBmNmRkMGZhOGYzYTYzNGM2MjdiMjhmMGJiMDI0ODIyOGFjZTBkZWJmMzA4NjA2MTAwMjk1ODNkMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjY3YmJjMDFhODNmZDE1Y2U5MjVjZjVjMDY1N2M3MTlhZDIyYzI4YTIzYmZhMWZjM2I2NTNjZTQwM2JhMWZkNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2Q0MTM0MGNjMjM5YTE1OWNlOWI2MDIyZTlmNjMyMjgzMmUyZWFkNzZjYWU5ZTQ3NTRkMjEwZWI4ZmI2ZDVlOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_549e681a141a44da81297e16db029b4e",
+      "statement": "The suite leaves the uppercase Ä and Ö map entries untested: no assertion passes a string containing Ä or Ö, so deleting those two entries would pass the current suite; adding a case like slugify(\"ÄÖ-Test\") == \"aeoe-test\" closes that gap.",
+      "evidence": [
+        {
+          "resource": "repo://slugify.py#L29-L31",
+          "version": "repo-lines-v1:sha256:4c2e487c573cf7dd70019844e4a1ffef1bf165e385748eee16902bfca6e60381:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTgyYTAyMDZiYzM2ZDM4YWE4M2JkNzY3YTEyMjQxODgzMTQ3N2E0OTk4OGVhZmFhZjhhNDhlNDg3YjhlOTNkMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmIzMTM0NTNjNGVmZmI1M2ZlODU3ZGQyYmNjNzhjNjcxZDllMmQxZDVhNDYyYjgzNTM3MDY5YjY2MzI4N2NhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWZmMjI5MzYxOTYyMWRjODA1OWRkZDk2MjIzM2IyZmMwZGE4N2ExM2I0OGMyNmFiYjQxMGJiNTA3OTMzYWJmNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDNlZDViNDdmNjVhY2I1NWNhNzQxOGJiYTBiNjhkYTFhYTc5NTlmMGM3NjA2ZGZjMTAxYWQ2YzRlNWQ0MzBmMCJ9"
+        },
+        {
+          "resource": "repo://test_slugify.py#L13-L35",
+          "version": "repo-lines-v1:sha256:0a7bf897257590ab53cd58df868d9cfd6b2c91de7355a0d433a478c4c372f390:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkMGVmMTVlNDVjNTYzMTBjOGM4MTkxMzc2MjRjY2ZkYTkyZWI1YzllNDQ5OWYzYzdkZTIyOTU5MzlkZTc1N2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4MmM5NWY0Y2M4YTE3YzY1ZGIzNDViNmE4MjYzNzgxZjNiMWM1NWMwOWQ0ZTFhOTNiYjNkOTM0ZGVkNGVlZDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1MDczYzhlMWQzNDBmNDgzMzVkYmUyZTRmYTEyNjk2ZjQ3Mjc0Mzc1MDhiMWMyNzFkNGNiNTNhNmE0ODVhNGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyOTQ1MTk5OWMxNzk4YzQxMzkwZGVmMjdjMjVhZTNjYzU4MmZlNWJlNGJlMmZkZTk5ZDVlZjhjMmQ3NzllNWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_31fedea7f80f42b293bb2fe804dca40c",
+      "statement": "Because this suite is the repository's only automated check (no CI, no other callers), any change to the transliteration map or the NFKD/ASCII normalization step in slugify.py must be paired with a corresponding test update in test_slugify.py: new map entries extend the umlaut/sharp-s methods, ß changes update test_sharp_s_transliteration, uppercase-entry changes update test_mixed_case, normalization changes update test_unicode_normalization (and re-check the empty/special-only group), and regex or trim changes update the separator, boundary, empty, and idempotency groups; genuinely new behavior gets a new test method in the same file.",
+      "evidence": [
+        {
+          "resource": "repo://slugify.py#L24-L49",
+          "version": "repo-lines-v1:sha256:a960ee52afa5156ecf9a021ee573ef3c0ce1dccfbe91e3c870800302a833deab:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmNWFlZDRjMzk4NThmZTYyMjViYzE1NDgwZGM4ZTYxYTM0NmU1YmY2MWVjYTBlN2VjMTVhZGM0MmFjODg0MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU0OWYxYTk4NDUwYjgwYmQxODM0NTkyZmIyZGFiM2I0N2YzNGRiZmYzZDEzN2ZjODE2NjA1ZjkyNjA4ZjYxMzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQwNGIxM2I1NjI5MjIyNDM1MjhmY2YzMTQyZjA4NWFiM2Y4ZDk2OGRiMjQ1MGU2MjU4NDg3NjkxZmY0MjY0YzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAwNDM2NjBmM2MyZjc2ZDQ1ZjNjOTM4OTIyYzhkNjg0N2Y1ZDViMzg1M2Y2MTE1ZGU2YmRkMjc3NDNiNTBkMDAifQ"
+        },
+        {
+          "resource": "repo://test_slugify.py",
+          "version": "repo-file-v1:sha256:ec472422bf4a09327456ff733f6abb70837bc4de3b0022197ec4c8439218af06"
+        }
+      ]
+    },
+    {
+      "id": "claim_4b930c751fe448f09d868719e6aee7bb",
+      "statement": "Three test groups pin the hyphen-collapse stage from different angles: test_special_characters_removed shows punctuation between words becomes exactly one hyphen (Hello@World/Hello#World/Hello$World/Hello!World → hello-world, not helloworld and not doubled), test_numbers_preserved shows digits survive the [a-z0-9] class (Version 2.0 → version-2-0, Item 42 → item-42), and test_multiple_spaces_collapsed shows any run of spaces, hyphens, or interleaved separators collapses to a single hyphen (Hello - - World → hello-world).",
+      "evidence": [
+        {
+          "resource": "repo://slugify.py#L45-L46",
+          "version": "repo-lines-v1:sha256:184b26ebaa92b406ba5b6d6ce101463971173a24bbc59c372f8d293ebdab147e:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYWI0MjAxZTgxYzc3OTE3NzUxMTlkOWI3MjAxZmYyZjk5NGUxMzJkY2JmZjAxM2VmNmRjYzQ5OTAwMTc2ZWEyYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWVkMzI0YTQ1ZGRhNjIwNzc2NDE5NjA0ZmI5NDI3NTRmOGQwMGM4ZDY5MDc2YzlkNjM0OWVjYTJjMGI5YzI0MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmEwMzNiMTA3NTgzMjEwYWMwMDg0NTA3ODcxMjFlMWE4M2QxNzc3NmZiNTMxOTNiZjA5ZTExNzQ1MmU3MWNmZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGFlMzBlNmNjNDZhNzE4YTQ0N2M5MDk1YjQ3NmQyNjI0NzJhYWUwYzA5NmQwYmQyMjIzMmQwMDlmZGY1NThiOCJ9"
+        },
+        {
+          "resource": "repo://test_slugify.py#L37-L53",
+          "version": "repo-lines-v1:sha256:64354016bebe8ccf5d35b7139124c01ea9671e309c03a7f430653d0a5df611cf:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBmZTkyMjdmYTZkNzIzNmU0YWJiYmIyNmYxYzIwZjUyZWRkYjRhZGJiM2FiYzk2ZjBlNmQ3NjczYzQxM2Q4OGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2NTEzNTg0YTVkNzNiODUwYjM4MDljODNjMzVkYzhjYmMxYTZhMDc3Y2YyOWY2MTIwNzMwZmYwNWMxMWRhMzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFlMWJiYzYxNjc5NmZmMGYxZjFjMzUzNzBkN2JhMGU2MzNjMGZjMWUzN2RiNDQyMjY2ODE1N2Y4MGI0MTYzNDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjYzE5MDhhMGYzMTIzZjI2MTJiYjUzZWExZDMxODAzNjA0NjMxMjcwYjFmNjM4MDYyZWZjYzczMTQ4MmY2OTYifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.3",
+    "at": "2026-11-02T19:30:23.660Z"
+  }
+}

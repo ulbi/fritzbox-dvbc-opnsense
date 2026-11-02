@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:5261446e1222869e76870a48f07c3b1f5e5b361dc04e09d9e9a36047f9a88c65",
+  "claims": [
+    {
+      "id": "claim_ff2c2e365bed4bc9b548c21f00dd1307",
+      "statement": "The repository root contains exactly five authored files (README.md, slugify.py, test_slugify.py, LICENSE, AGENTS.md) plus the generated openwiki/ directory and .git metadata; there are no source/config subdirectories, no dotfiles, and no package, build, or CI files at any level.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md",
+          "version": "repo-file-v1:sha256:3f65427f27766385406120665601b3866f854937467101977cfcd5ab695bd575"
+        },
+        {
+          "resource": "repo://LICENSE",
+          "version": "repo-file-v1:sha256:9d2283c8e16a853938fc0194cded5aeb20c89879312ad8c8ad29408e38f86f41"
+        },
+        {
+          "resource": "repo://README.md",
+          "version": "repo-file-v1:sha256:4743fcfac58bedaf21cb6e440e907693c462e2e02e97434aec1222a26536e5d4"
+        },
+        {
+          "resource": "repo://slugify.py",
+          "version": "repo-file-v1:sha256:01810151122a7f58d2d4d0ec5edaf505f195d71de910b66709b4f40b15b20733"
+        },
+        {
+          "resource": "repo://test_slugify.py",
+          "version": "repo-file-v1:sha256:ec472422bf4a09327456ff733f6abb70837bc4de3b0022197ec4c8439218af06"
+        }
+      ]
+    },
+    {
+      "id": "claim_ee67059ae9cf4c1e9af4e378d3990811",
+      "statement": "The repository hosts two unrelated domains — an IPTV network runbook (README.md) and a slug text-utility (slugify.py with its pytest suite) — with no internal dependency between them: README.md never references the slug helper, the helper code never references the network guide, and the only internal import edge in the repo is test_slugify.py importing slugify.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L1-L74",
+          "version": "repo-lines-v1:sha256:4743fcfac58bedaf21cb6e440e907693c462e2e02e97434aec1222a26536e5d4:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyN2I0YzdlN2U3ZjRiNGEwNjU4YzU5YmY5ZGJhNTM3ODQ2ZDE0NjZmZDMyMTM3NzM1OTY5MDRlYjY4ZDNmYjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyMTllYzZhNDllYTVjMDk3MDYxMTI1Y2VmMWNmYjFkNTVhNDM5MGQ4NzNmOTVkODZhOWFjYjNjM2FmOWYzNmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://test_slugify.py#L4-L4",
+          "version": "repo-lines-v1:sha256:78b5ae57aa8764781727f667773ea2cdf66fbe6b52af959fc241b39a8390c17f:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzhiNWFlNTdhYTg3NjQ3ODE3MjdmNjY3NzczZWEyY2RmNjZmYmU2YjUyYWY5NTlmYzI0MWIzOWE4MzkwYzE3ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzhiNWFlNTdhYTg3NjQ3ODE3MjdmNjY3NzczZWEyY2RmNjZmYmU2YjUyYWY5NTlmYzI0MWIzOWE4MzkwYzE3ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYWU2NWIwZjE0NWZiNTBmOTVkMmQ0YzRkN2JkNzc4Yjc1MTY1NDBlZTZmNzY1ODczMmM4YmE4ZDM1YWI2MDRjZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjVjNGQ3Njc5NDRhN2M0ZGM2ZjFiOTQ4OTIzMTA1ODI3YzMzYzllMzYzM2EzYmRmMmE0NWQ4NTY2ZDQ2MDU2OSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_13556efb5e3a4c338d57a51b37cc65d5",
+      "statement": "README.md is the repository's main deliverable and primary content: a self-contained runbook for routing FRITZ!Box 6591 Cable DVB-C IPTV (RTP) streams through an OPNsense firewall into the internal LAN, structured as Background/Challenge/Objectives/Steps (Prerequisites, OPNsense Configuration, FRITZ!Box Configuration, Testing and Monitoring)/Final Notes with concrete values (port 554, UDP source ports 5000-5010, 192.168.180.0 to 192.168.178.0 1:1 NAT), and containing no install or repository-description boilerplate.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L1-L74",
+          "version": "repo-lines-v1:sha256:4743fcfac58bedaf21cb6e440e907693c462e2e02e97434aec1222a26536e5d4:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyN2I0YzdlN2U3ZjRiNGEwNjU4YzU5YmY5ZGJhNTM3ODQ2ZDE0NjZmZDMyMTM3NzM1OTY5MDRlYjY4ZDNmYjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyMTllYzZhNDllYTVjMDk3MDYxMTI1Y2VmMWNmYjFkNTVhNDM5MGQ4NzNmOTVkODZhOWFjYjNjM2FmOWYzNmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_74d4e7334a8f478ca16cb54dd784e70a",
+      "statement": "slugify.py is a self-contained 51-line module exposing exactly one public function slugify(text: str) -> str with no module-level state; it imports only standard-library re and unicodedata, with no project-internal or third-party imports, making it safe to copy or inline into other projects.",
+      "evidence": [
+        {
+          "resource": "repo://slugify.py#L1-L51",
+          "version": "repo-lines-v1:sha256:01810151122a7f58d2d4d0ec5edaf505f195d71de910b66709b4f40b15b20733:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJmOWFlNWNjMmM5ZGM3MTU2YzkyZTVhYzQzZDk0MjBhMmFlMmQyZDYyOWQ0ZTdhZjVjOTc5NDAwYzVmOTQxNzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2YTgyNjU0ZjE0YTIwN2UxZWZjODUzZDYyYTAzYWE2YzIyNWIxZmIzYjRjNjhiZTAxNDRiZjgzMzNiY2Q4ZjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6342f50b83f544f09c8f96fc3766a01d",
+      "statement": "The slugify pipeline runs in fixed order: empty input short-circuits to \"\"; explicit German umlaut/ß transliteration (ä→ae, ö→oe, ü→ue, ß→ss plus uppercase variants); unicodedata NFKD normalization with ascii-ignore encode/decode; lowercase; re.sub(r\"[^a-z0-9]+\", \"-\") collapsing each non-alphanumeric run to one hyphen; then stripping leading/trailing hyphens.",
+      "evidence": [
+        {
+          "resource": "repo://slugify.py#L20-L51",
+          "version": "repo-lines-v1:sha256:b066a85bb1b639beebd235db727778e708e02e79a05db0d2327811a9f42558f1:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MDkxMjFjOGMyZDYwNjA3MWI0OWQyZmIzZmQ1NDNkMjQwZTRkZDkzYmZkZDkyMWRhMDY3NjllNjM1YWVjZmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2YTgyNjU0ZjE0YTIwN2UxZWZjODUzZDYyYTAzYWE2YzIyNWIxZmIzYjRjNjhiZTAxNDRiZjgzMzNiY2Q4ZjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxYWVmZDI2MWM5NTk1NGVkOGI1ODkzZjBhZDYxYjU3YzZiMGZhMGE5NzAxNWY4NmY5MDkxZmM4NTk3Mzk0ZjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9ccdd1ec3ebe4cd488798ed5f2106c01",
+      "statement": "test_slugify.py is the only automated check in the repository: a single TestSlugify class with twelve pytest methods grouped by concern (basic ASCII, umlaut transliteration, sharp-s transliteration, mixed case, special-character removal, number preservation, whitespace/hyphen collapsing, empty and special-only input, Unicode normalization, hyphen trimming, idempotency), runnable as pytest test_slugify.py from the repo root.",
+      "evidence": [
+        {
+          "resource": "repo://test_slugify.py#L1-L84",
+          "version": "repo-lines-v1:sha256:ec472422bf4a09327456ff733f6abb70837bc4de3b0022197ec4c8439218af06:eyJzZWxlY3RlZExpbmVDb3VudCI6ODQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ODI3YmJjYmY2NjBhYTA4NTM4NTdlZDA3NGUxYWUwMTc3OWU1Mjk3NTI4NDhhMzgxZmZhMTJmMmExNTA4OTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE1ODNhY2FmNzRmYjMzOTFiMDU2MTY3OTNiZTdiMTEzOThkNjA2NTIzY2Y2ZmUxMzVhY2I1MzgyOThjZDAxMWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1dadcba331c54fdab1ed952afcd11b8f",
+      "statement": "The test import from slugify resolves without any installation step because both files sit in the same root directory; test_slugify.py also ends with an if __name__ == \"__main__\" guard calling pytest.main([__file__, \"-v\"]) so it can run directly, and pytest is imported directly with no requirements file, version pin, or CI hook.",
+      "evidence": [
+        {
+          "resource": "repo://test_slugify.py#L3-L4",
+          "version": "repo-lines-v1:sha256:7eb85086c9551178facf3060860f0dfeef6611503b97148d4734fb40d18ff0ec:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjc1YTgzMDJjNjIxOTA3NDZjZDhmYzIyOWM2MTg2ZjExZmI1MzE0MjE4YjIwZDFiNzQyOTIwMzAxYTQ5NWI3NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzhiNWFlNTdhYTg3NjQ3ODE3MjdmNjY3NzczZWEyY2RmNjZmYmU2YjUyYWY5NTlmYzI0MWIzOWE4MzkwYzE3ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWI5NzU1NTg1MmI3NDAzOTFmNjRkMmE4ZWY3NzQ5MzkxYjg0NDRlNmU5YjI4YWJlODVhMzRlZWI5MzUxYTk1YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjVjNGQ3Njc5NDRhN2M0ZGM2ZjFiOTQ4OTIzMTA1ODI3YzMzYzllMzYzM2EzYmRmMmE0NWQ4NTY2ZDQ2MDU2OSJ9"
+        },
+        {
+          "resource": "repo://test_slugify.py#L82-L84",
+          "version": "repo-lines-v1:sha256:4256ad8a93f357861129ae033edf9b96a33e9b53fcfcb8fc6194c6b148a5d35e:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTU4M2FjYWY3NGZiMzM5MWIwNTYxNjc5M2JlN2IxMTM5OGQ2MDY1MjNjZjZmZTEzNWFjYjUzODI5OGNkMDExYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjUwNWI2MzBiY2VkYjgzNzdkMjcwY2Y4MTU1YTE1OGVlNzM4YTUyZTRkNDRkMzg4YWQyMTkxYTQyYzU4ODYyMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_06c41fd09d9d416da79cfb8116db3b69",
+      "statement": "AGENTS.md is entirely OpenWiki boilerplate wrapped in OPENWIKI:START/OPENWIKI:END markers: it declares the generated openwiki/ index as optional just-in-time context (not required startup reading), states that source code and tests are authoritative, and directs that generated pages — including the openwiki/ run-state records — be refreshed via the maintenance process rather than hand-edited.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L1-L16",
+          "version": "repo-lines-v1:sha256:3f65427f27766385406120665601b3866f854937467101977cfcd5ab695bd575:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmMTgwZjljMTI2OTAzYmNjMzMxYWE5NTQ1NmU0OTQ0NGE3ZDRkMDExZThhMmE4M2Y1ZGM4NzAyMzkxODEyZDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA5Zjc4NzE0ODkzYWE3Nzk0MmNlYTFjNGEyZTAyMzFkYmI3ZmEyYTQxYTcwYzgxNDYwYTNjNjc1NjJkYTNhYWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3f929e389c8741bb9331dd03ad11c4ca",
+      "statement": "LICENSE is the standard MIT license text, Copyright (c) 2023 ulbi, and is the single license statement covering the whole repository including the slugify helper.",
+      "evidence": [
+        {
+          "resource": "repo://LICENSE#L1-L21",
+          "version": "repo-lines-v1:sha256:9d2283c8e16a853938fc0194cded5aeb20c89879312ad8c8ad29408e38f86f41:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2N2Y3YTJlMTlkZmE5ZGY5OWFmNzc0NTIwOTg1YTBlNTIxOTI1MjkzZWE1YjdlNzY3YWIwNjk2OWQwNmJmOTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlNDUzNmNkYTdmMjdlMTFhMjM3ZThhZTVhM2FhMzc3MjdhMDY1ZmExYzE1MzNlNDk0MGRkOGIzZmNhZjQ0NWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_53a911f202c44f199bf14b29461d3adb",
+      "statement": "The repository has no build, CI, or dependency infrastructure: no package manifest (setup.py/setup.cfg/pyproject.toml/requirements*.txt/Pipfile/lockfile), no CI configuration (.github/ or equivalent), no build script or task runner (Makefile/Dockerfile/tox.ini), no lint/format/type-check config or dotfiles, and no pinned dev dependency — the only required tool is pytest, imported directly by the tests and installed ad hoc.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md",
+          "version": "repo-file-v1:sha256:3f65427f27766385406120665601b3866f854937467101977cfcd5ab695bd575"
+        },
+        {
+          "resource": "repo://LICENSE",
+          "version": "repo-file-v1:sha256:9d2283c8e16a853938fc0194cded5aeb20c89879312ad8c8ad29408e38f86f41"
+        },
+        {
+          "resource": "repo://README.md",
+          "version": "repo-file-v1:sha256:4743fcfac58bedaf21cb6e440e907693c462e2e02e97434aec1222a26536e5d4"
+        },
+        {
+          "resource": "repo://slugify.py",
+          "version": "repo-file-v1:sha256:01810151122a7f58d2d4d0ec5edaf505f195d71de910b66709b4f40b15b20733"
+        },
+        {
+          "resource": "repo://test_slugify.py#L3-L4",
+          "version": "repo-lines-v1:sha256:7eb85086c9551178facf3060860f0dfeef6611503b97148d4734fb40d18ff0ec:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjc1YTgzMDJjNjIxOTA3NDZjZDhmYzIyOWM2MTg2ZjExZmI1MzE0MjE4YjIwZDFiNzQyOTIwMzAxYTQ5NWI3NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzhiNWFlNTdhYTg3NjQ3ODE3MjdmNjY3NzczZWEyY2RmNjZmYmU2YjUyYWY5NTlmYzI0MWIzOWE4MzkwYzE3ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWI5NzU1NTg1MmI3NDAzOTFmNjRkMmE4ZWY3NzQ5MzkxYjg0NDRlNmU5YjI4YWJlODVhMzRlZWI5MzUxYTk1YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjVjNGQ3Njc5NDRhN2M0ZGM2ZjFiOTQ4OTIzMTA1ODI3YzMzYzllMzYzM2EzYmRmMmE0NWQ4NTY2ZDQ2MDU2OSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.3",
+    "at": "2026-11-02T19:30:23.660Z"
+  }
+}
