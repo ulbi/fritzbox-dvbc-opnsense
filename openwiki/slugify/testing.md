@@ -3,15 +3,15 @@ type: test-suite-map
 title: Slugify Tests
 description: The pytest suite in test_slugify.py that pins the slugify() contract — twelve hand-written test methods in one TestSlugify class, grouped by concern from basic ASCII through umlaut and sharp-s transliteration to Unicode normalization, boundary hyphens, and idempotency — with a mapping from each pipeline stage to the assertions that must change when behavior changes.
 tags: [slugify, pytest, testing, python, test-coverage]
-verified:
-  - by: openwiki/0.7.3
-    at: 2026-11-02T19:30:23.660Z
 sources:
   - id: openwiki-source-3433005f88546e0a5be9fb3d
     resource: repo://slugify.py
   - id: openwiki-source-06649f76f0914a41f41ad7da
     resource: repo://test_slugify.py
 generated: { by: "openwiki/0.7.3", at: "2026-11-02T19:30:23.660Z" }
+verified:
+  - by: openwiki/0.7.3
+    at: 2026-11-03T06:41:52.443Z
 ---
 
 # Slugify Tests

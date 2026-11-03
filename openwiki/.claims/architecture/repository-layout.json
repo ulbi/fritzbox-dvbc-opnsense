@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:5261446e1222869e76870a48f07c3b1f5e5b361dc04e09d9e9a36047f9a88c65",
+  "pageVersion": "sha256:df6694baf23d36ed3b24f9ebac639f9b4738b4da30e842f5531b2c943123a5a7",
   "claims": [
     {
       "id": "claim_ff2c2e365bed4bc9b548c21f00dd1307",
@@ -98,7 +98,7 @@
     },
     {
       "id": "claim_06c41fd09d9d416da79cfb8116db3b69",
-      "statement": "AGENTS.md is entirely OpenWiki boilerplate wrapped in OPENWIKI:START/OPENWIKI:END markers: it declares the generated openwiki/ index as optional just-in-time context (not required startup reading), states that source code and tests are authoritative, and directs that generated pages — including the openwiki/ run-state records — be refreshed via the maintenance process rather than hand-edited.",
+      "statement": "AGENTS.md is entirely OpenWiki boilerplate wrapped in OPENWIKI:START/OPENWIKI:END markers: it directs agents not to enumerate, preload, or search wikis at task start; to use openwiki_search for just-in-time context and openwiki_read for complete sections when retrieval is warranted (asking which listed workspace to use if search returns workspace_required); to use openwiki_list_workspaces/openwiki_list_wikis when workspace membership matters; to fall back to reading openwiki/quickstart.md only when retrieval tools are unavailable; states that source code and tests are authoritative; and directs that generated pages be refreshed via the maintenance process rather than hand-edited.",
       "evidence": [
         {
           "resource": "repo://AGENTS.md#L1-L16",
@@ -145,6 +145,6 @@
   ],
   "verification": {
     "by": "openwiki/0.7.3",
-    "at": "2026-11-02T19:30:23.660Z"
+    "at": "2026-11-03T06:41:52.443Z"
   }
 }

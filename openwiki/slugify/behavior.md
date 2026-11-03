@@ -3,9 +3,6 @@ type: function-contract
 title: Slugify Behavior
 description: The slugify(text) contract in slugify.py — German umlaut/ß transliteration before NFKD-to-ASCII normalization, lowercasing, non-alphanumeric collapse to single hyphens, and edge-case behavior for empty, whitespace-only, special-characters-only, and already-slugified input.
 tags: [slugify, unicode, text-processing, python, url-slug]
-verified:
-  - by: openwiki/0.7.3
-    at: 2026-11-02T19:30:23.660Z
 sources:
   - id: openwiki-source-23775c3de52f3ab95a13cb8b
     resource: repo://README.md
@@ -14,6 +11,9 @@ sources:
   - id: openwiki-source-06649f76f0914a41f41ad7da
     resource: repo://test_slugify.py
 generated: { by: "openwiki/0.7.3", at: "2026-11-02T19:30:23.660Z" }
+verified:
+  - by: openwiki/0.7.3
+    at: 2026-11-03T06:41:52.443Z
 ---
 
 # Slugify Behavior

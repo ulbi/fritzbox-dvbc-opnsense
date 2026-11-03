@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:b960d50c082e1706833850941cd10f8ae25831c7d53251d38486f537c44835f7",
+  "pageVersion": "sha256:7af8c3c8c051ded6891e8157b99065679a024886046acc2207fd89f9756df375",
   "claims": [
     {
       "id": "claim_edc6e597ea894a95bf1bb38e99960e36",
@@ -99,10 +99,126 @@
           "version": "repo-lines-v1:sha256:88dd5826dfecba59d1238c915ddf9807c6164ce9f1174eb1f3c534eabec1aa03:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTE0Njk4MGJmNjk3NTdjYmQ3NTU4ZDRhYTUzZDI2ZDkzNDM0ZWViZjJkYjQ0YTk4MjdhZGQ5NDcyOTM3NGQyYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmE0YTJiZDhkZTMyMTIzYWIyOWQzNGI5ZThhZGRiNjM0ODg3MjAzYTI1MGFjNmUxNDY1NGI1N2Y4ZmJhNGZmZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGQ1OWRkNTBiYzViZTY4ZjA0ZGMzOWU5ODU4M2ExNWYwZTJiNmZkYjQ2ZTMwMTAwM2UwMDQ2NzYyMDE2MmJkMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTM2ZmNmNWIyNDBiNTBmMzNiNzc2ZjY3ZjM3YWQ0OGY3OTBlMjgzZDViZDFkMWRmYmE2OGZhYzAxYzkyZWIzYSJ9"
         }
       ]
+    },
+    {
+      "id": "claim_96d01b1cb2ac486e8743239260bce90d",
+      "statement": "The network topology pairs a FRITZ!Box 6591 Cable modem (DVB-C, up to 4 IPTV streams accessible via any compatible IPTV client) with an OPNsense firewall placed between the FRITZ!Box and the internal network, which segments the network (e.g., for IoT devices) and manages inbound and outbound access rules.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L4-L20",
+          "version": "repo-lines-v1:sha256:fbea6e2a8ac4ddb49a7b86b19993eaafecfbabf870e5185019a0dc49b0203c15:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZmZDRmMGU4MzA1YTI0NmNjMmI5MjI0NTllNjY1MjE3NTRkYTllNWRjNmQzY2ZlN2UwMDM4MTQ3YzRlMGQ4NjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNkYjhhZTZjNjE0NTcyNzRjOTBmZDA2MTQ4MDZhN2MxMmI3OTVmNjlmNWE2ZmU4MjIzNDc4ZDM1YzcxNDBkMDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg0YmQ0MTAzZTkxNmU5ZjJiM2U2NTMzMDdkZDg5MWM2ODg3ZGFlZThhOTZjNmRiY2U2NGU0ZWNjODIzMTU5NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c49dd299f2be41b3ab88f8efbc8b6349",
+      "statement": "The guide's challenge is the absence of documentation for accessing FRITZ!Box 6591 Cable IPTV streams through an OPNsense firewall, specifically RTP (Real-time Transport Protocol) streams; its two objectives are enabling those RTP streams to reach end devices through the firewall and documenting the procedure for this scenario.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L22-L24",
+          "version": "repo-lines-v1:sha256:8ebf3dfcadb045817a39d28854ba04603eaa5598dfc2d1aef054a7298c81bf9d:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYWZlMjBjMzA5MjUwZjYyNzJjOTQ4YTFlM2UyNDRmOGU4M2I3ODgzZmEyNzBiOWJjYzM4MTFkZGJkYjdmZDllOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmE0OWNiM2Y5NjdhODFhNDNkZjQ3NjFlY2MzZGJiNjMxNmMxODg3ZGFiODEzMWE2Njc2NDYwOWY5MTNmNmQ1ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmFmMzlhNjAzYzRlOTU4YmZkZTg2NDM3OGZjODc4MDNmOGZkOTg2Mzg1MjFkYjkwZjU4YTU2ZTZjNWNiNGU0MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjFhZjNkZDA4ODFkOWM4Mzk3ODNlZDk0ZGNkNGYwODdmMzg5NDZkMGZkZmQ4MWIzZDM1NzRhYmU2NzAxOTFmMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_b75097d7e3a349fea34123da9af7d6b0",
+      "statement": "End-to-end IPTV connectivity requires three cooperating artifacts: (1) an OPNsense LAN pass rule for the RTSP control channel on TCP/UDP port 554 from LAN network to WAN address, (2) a second pass rule admitting inbound UDP from the FRITZ!Box IP with source ports 5000-5010 to the LAN net on the FRITZ!Box-facing interface (without which OPNsense's default-deny drops the unsolicited RTP), and (3) a 1:1 NAT mapping external subnet 192.168.180.0 to internal network 192.168.178.0, paired with a static IPv4 route in the FRITZ!Box sending traffic for 192.168.180.0 to the firewall's WAN IP as gateway.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L26-L70",
+          "version": "repo-lines-v1:sha256:9ec41a68c6525685babbb74521780ca6ffabe1144e31a3ab848d8a9cecfb3e93:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1ZTcyZDI3ZTkxYjlhNDFhMDQ2ZTgxMWY0NTM3MjQ0N2UyNDNkOTU2ZGRiN2JkNjdjODcwYzQwNjU5YzM3MDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjViNTM3ZTI3NzVkOWYzNzJlYzhlNWUzMWZmNTZmZjkwMTVjNDk1NWZhN2U1MTA2MzQwOWJkODNhMmM5MDZkYjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwNTZlZjg5NWJjMTYwZDNhZGUyZmI5ZmE1OTA5NjM3NzQ0MzA4ZDZlYmZkODIyYWVhZTMzMDM5YTc3NjMwOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdkOThjNWJiZDVmYTFjOGVkYWVmODYzOTFmZTRiNDdlZGQ2OWM5OWUyM2E0ZmEwYzc0ZWJlNDViYzgxM2Y0MDQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ad6ef7684b654f5e9bb46c0ca384d3a5",
+      "statement": "OPNsense rule 1 passes the RTSP control channel: navigate to `Firewall > Rules`, add a rule with Action Pass, Interface LAN, Protocol TCP/UDP, Source LAN network, Destination WAN address, Destination Ports 554, then save and apply the configuration.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L29-L35",
+          "version": "repo-lines-v1:sha256:28fc31e74d28f2f9d7a9a8b4c9d06c4d7093cf061f80acee1b86923568f51a28:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU3OWM5YTFmN2JiZDg1MWIwZjQ2ODg4ZDVjZjIwMTA5YjU3NGY2MjI0MzU5NmNlM2MyMDhjMTk2NGRjMjljYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmFjOGM1ZGI1ZDE0NDYyMTBiYzgwNWMzZDdjMmIzZThiN2EwZTIyZGYwZDE4OWZiOTVlOTY5YjgwOGE0Nzc5OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjIxNTg1MDc0M2NjMjg4Y2Q2ZWRlMWU5Yzk1ZjA0MGRiY2ZiNzZjZjY4NDMxMzExN2VmNWYzYTZlMDQxYTkzZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWM2ZTU1ZmEzYzI2YzE3ZTdhMzE0MzkyNTE5YjNlODkwYmRlZTI2NGVjMGI3NDBmYzRkYjhiMTU2YWM0YmZmNCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_e2dfd3079936492491dd146019f7fd90",
+      "statement": "OPNsense rule 2 passes the RTP media streams: navigate to `Firewall > Rules`, add a rule on the interface connecting to the FRITZ!Box with Action Pass, Protocol UDP, Source FRITZ!Box IP address, Source Port Range 5000-5010, Destination the LAN Net, then save and apply the configuration.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L37-L46",
+          "version": "repo-lines-v1:sha256:f5024d1b139baa41b49356e3c0e75cc2f28e37cbb6538c45e00c07e1e88b9753:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA5ZjRkNThmZDExYThiYWIxNzQ5NGIzZjQ2OTg4ODhmNTA5MTA3NTgxYTBhMzAxMzhhM2EzNzI4N2Y1NDQ0ZTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhYzhjNWRiNWQxNDQ2MjEwYmM4MDVjM2Q3YzJiM2U4YjdhMGUyMmRmMGQxODlmYjk1ZTk2OWI4MDhhNDc3OTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFmYjQ3M2RkYTE5YTIzMmFjNTc3ZWY2ODE5MTc1YjEwYjFlODI1M2I0NGNlMWMzZjNlYmU2ZWYwZTc2MzQzZjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJkMzUwZWQ4OWExYzUwNDU2ZmM1NWFlZDM0ZTcyZTkyMWMzNjc5NmFiNWMwNDY5M2MwNjI1OGUxODc1OTU3MDEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ef57b914e3b746779f5813dc2d203436",
+      "statement": "The 1:1 NAT rule: navigate to `Firewall > NAT > One-to-One`, add a rule with Interface WAN, External subnet IP 192.168.180.0, Internal IP network 192.168.178.0, then save and apply the configuration.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L48-L54",
+          "version": "repo-lines-v1:sha256:fcd29f23d5614bfe0166295372321ad462b3ac82ee63643346adf4d6a531ca88:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTk5NmMwMWM4OWRjYzliYmNjMzQ0N2E5NTdmNWEzMjE1NjBiMmFlY2ZiMGUwOGZlMjUwNjE0MzkxMGRjMzQyOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmFjOGM1ZGI1ZDE0NDYyMTBiYzgwNWMzZDdjMmIzZThiN2EwZTIyZGYwZDE4OWZiOTVlOTY5YjgwOGE0Nzc5OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYWQyOGM3NDA4MzhmMWZmYzZjNGFkYjFkMDNmYmVhNzU5Y2FlN2E5OTRlNTZlZjlkOWFiNmQ1YTQxNDFhZjY4NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjE1ZDAyMGJlMzMxNmVkMjQ0OTA4YmFiZmFkNWMwYjU0NmYxYzM0YWZlY2NhZGNiYTNhYWNkYWE2YTE5MTRmMCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9c2e2a2f0b514a478727d7ff12615755",
+      "statement": "FRITZ!Box configuration: in the admin console navigate to `Internet > Permit Access > IPv4 Routes` and add a route with Network 192.168.180.0, an appropriate subnet mask, and the WAN IP address of the firewall as gateway, then save and apply the changes.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L56-L64",
+          "version": "repo-lines-v1:sha256:1bfd4b3d5613cc3ec083e027d69439d956481a6028b6f895a5efb36f0e2969f9:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDZhYzg2ZTIxZTk5NDhkYmY5NDZkZjY0NGY0ZmQxZDcxNzZkYjhmYTNhOTU3NmY5YjUyOTliY2MwODMwYzVlMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDZjNGNhY2I4YjNjOGZhMzMwMzY5NTk1ZjM3YjQyODMzZDdiMTIwN2NiMjQ1MGQyNGExM2QxM2QyMDkyOTQzNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDUzZjg0ZGM4MWNjYzhkMDBjY2E0NDA5ZDg3MGRjNjMzNzU3MTI4YmEzYWY2N2ZkNTRkYWMyYmJiODVlYmViMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODJjYTc2ZDk5MzBkN2U3ODMyNjdmMjA1OTFhODczZTlhZTZjMGFiNzQ2OGYwNzViOGFkNzdhMmE2MDg0OTMzNyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_0affd72f9a644e73aad3d916cb5d6400",
+      "statement": "Every configuration change on both the OPNsense and FRITZ!Box sides must be saved and applied to take effect; the runbook instructs saving and applying after each individual configuration item.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L28-L28",
+          "version": "repo-lines-v1:sha256:e146777cf3b5d12344db956c44d5cfc058f2f3c7e0a238055825d627065a2bc0:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTE0Njc3N2NmM2I1ZDEyMzQ0ZGI5NTZjNDRkNWNmYzA1OGYyZjNjN2UwYTIzODA1NTgyNWQ2MjcwNjVhMmJjMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTE0Njc3N2NmM2I1ZDEyMzQ0ZGI5NTZjNDRkNWNmYzA1OGYyZjNjN2UwYTIzODA1NTgyNWQ2MjcwNjVhMmJjMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjFhZjNkZDA4ODFkOWM4Mzk3ODNlZDk0ZGNkNGYwODdmMzg5NDZkMGZkZmQ4MWIzZDM1NzRhYmU2NzAxOTFmMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzkxZmE0NmNlYzNhM2UxNDBmZWI3YjY5OGFlM2UzZmNlYjMyODAwY2Y4NDY3MDk5NTA1YTM3ZDg1OThjZWYzNCJ9"
+        },
+        {
+          "resource": "repo://README.md#L36-L36",
+          "version": "repo-lines-v1:sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODcwMDVlZDgxMzUyOGY5NThiYmQ3ZDUzNzA5NmY2Mzk1MmIwNWJjMmRlMjI5MTJjMDUyN2M5Mjc4M2VjODE2YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2QxNDJkMmIyMTNlYzU5NGY5ZjYxZTE0MzgzZmMyY2M5MWVjOTk2ZDI0ZGJmNGM3NjczYzdmZmNlNmYwMWRkNiJ9"
+        },
+        {
+          "resource": "repo://README.md#L47-L47",
+          "version": "repo-lines-v1:sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWFmYTViM2U3OTQyYWUzYTE4MzRhODhmOGI3ZDM1ZThiMTY4YWMxOTE4MzRjMDZlNTk0ZjIyODZlNDI2NDRhOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWM2OThlZDExZTlkZmUwYmU2ZTQxYmU0ZDYxNjlhYWVjZDExYTliZTgzODYwZTI5ZTY2MzMyN2JiYWZjZDZlNCJ9"
+        },
+        {
+          "resource": "repo://README.md#L55-L55",
+          "version": "repo-lines-v1:sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOGFlMWU1NTc4NGM5ODE2N2Y5NjIyYzYzN2U3N2NmZGU4N2M4ZTI5YjA2YmE2ZGI2NTE0ZjJiNjNkY2U2NWQyZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDY0YzUxNDFlZmNiZTJiYmU2NmNlZmM2ZTdlYmZjOGZjMWZlMjA0MjQxYzYzZmQ3ODlkNDgzMWVmNWNiZmQyOSJ9"
+        },
+        {
+          "resource": "repo://README.md#L63-L63",
+          "version": "repo-lines-v1:sha256:55df110a6426115fb52e034205fa48bb1b59f7cbd3c0b7bce4397a487d0798d2:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTVkZjExMGE2NDI2MTE1ZmI1MmUwMzQyMDVmYTQ4YmIxYjU5ZjdjYmQzYzBiN2JjZTQzOTdhNDg3ZDA3OThkMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTVkZjExMGE2NDI2MTE1ZmI1MmUwMzQyMDVmYTQ4YmIxYjU5ZjdjYmQzYzBiN2JjZTQzOTdhNDg3ZDA3OThkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNWFhOGFjNzUxNDAxNmJkNzg4ZjM5YTZhMTRhY2M3ZDc0MTFmNmRlYzA1OThhYjc3MWQ1ZDFhOWM3MDE0Yjc3MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNmJkOTgwNDE4NTkyMWM2MTkzOWVjMWNkMDU5YjUwNTNjNDNkMDMwYTE0ZGU5YTBkZWYyZTI4OWZlZGMxZmMwMCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_63bcae8434bb431c89aa474e109636a7",
+      "statement": "Validation and operations: test the setup by validating streams with an IPTV client to confirm they pass through the firewall, and activate OPNsense logs specifically for the new rules to monitor traffic and troubleshoot; after successful configuration, internal IPTV clients can access the FRITZ!Box 6591 Cable's IPTV streams, and ongoing monitoring and logging are recommended.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L66-L68",
+          "version": "repo-lines-v1:sha256:dc5c21eac3aefeb62071b69edaf0db58327438e2987faf486d5c8b80058d621a:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYWE5Njc5ZjU4NDhlM2M3NWQwNmViZjE5MzU5N2ExYzVmOWY2NzcyYzU4YmIyYmY3YjQ3YTZkOWI3NzRkODUyMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjZhOTg0MzEwYjg1MDIwNDgwMGNhYzdiZGQ0MzMwODY1ZDc5ZDNjYzAxYzY5MjRmZTkwYWEyNDFlNjE0MDEyOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_50a62cd32ba146ed914850725a9a7a5b",
+      "statement": "README.md is the repository's sole source of truth for this networking topic: it is pure prose guidance with no config files, scripts, or fixtures encoding any of the settings, so any change to the setup (ports, subnets, firewall product) starts by editing README.md.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L1-L74",
+          "version": "repo-lines-v1:sha256:4743fcfac58bedaf21cb6e440e907693c462e2e02e97434aec1222a26536e5d4:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyN2I0YzdlN2U3ZjRiNGEwNjU4YzU5YmY5ZGJhNTM3ODQ2ZDE0NjZmZDMyMTM3NzM1OTY5MDRlYjY4ZDNmYjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyMTllYzZhNDllYTVjMDk3MDYxMTI1Y2VmMWNmYjFkNTVhNDM5MGQ4NzNmOTVkODZhOWFjYjNjM2FmOWYzNmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.7.3",
-    "at": "2026-11-02T19:30:23.660Z"
+    "at": "2026-11-03T06:41:52.443Z"
   }
 }

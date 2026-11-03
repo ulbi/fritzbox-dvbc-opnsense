@@ -5,7 +5,7 @@ description: Map of the small, flat repository — the five top-level files, the
 tags: [repository-structure, documentation-first, python, no-build-infrastructure, openwiki]
 verified:
   - by: openwiki/0.7.3
-    at: 2026-11-02T19:30:23.660Z
+    at: 2026-11-03T06:41:52.443Z
 sources:
   - id: openwiki-source-8037e2358a2c4f9b2c722a11
     resource: repo://AGENTS.md
@@ -17,7 +17,7 @@ sources:
     resource: repo://slugify.py
   - id: openwiki-source-06649f76f0914a41f41ad7da
     resource: repo://test_slugify.py
-generated: { by: "openwiki/0.7.3", at: "2026-11-02T19:30:23.660Z" }
+generated: { by: "openwiki/0.7.3", at: "2026-11-03T06:41:52.443Z" }
 ---
 
 # Repository Layout
@@ -57,11 +57,11 @@ flowchart LR
         WIKI["openwiki/ generated pages"]
     end
     TESTS -- "imports slugify" --> SLUGIFY
-    AGENTSMD -- "describes" --> WIKI
+    AGENTSMD -- "retrieval workflow for" --> WIKI
 ```
 
 *The only internal import edge is `test_slugify.py` → `slugify.py`; `AGENTS.md`
-describes how agents should treat the generated `openwiki/` pages;
+describes how agents should retrieve and treat the generated `openwiki/` pages;
 `README.md` and `LICENSE` are isolated.*
 
 ## Top-level map
@@ -137,9 +137,14 @@ behaviors to assertions is in [Slugify Tests](../slugify/testing.md).
   is the single license statement for everything in the repository, including
   the `slugify.py` helper.
 - **`AGENTS.md`** — entirely OpenWiki boilerplate: the whole file sits between
-  the `OPENWIKI:START`/`OPENWIKI:END` markers. It tells agents that the
-  generated `openwiki/` index is optional just-in-time context (not required
-  startup reading), that source code and tests are authoritative, and that
+  the `OPENWIKI:START`/`OPENWIKI:END` markers. It tells agents **not** to
+  enumerate, preload, or search wikis at task start; to use `openwiki_search`
+  for just-in-time context and `openwiki_read` for complete sections when
+  retrieval is warranted (asking which listed workspace to use if search
+  returns `workspace_required`); to use `openwiki_list_workspaces` /
+  `openwiki_list_wikis` when workspace membership itself matters; to fall back
+  to reading `openwiki/quickstart.md` only when the retrieval tools are
+  unavailable; that source code and tests are authoritative; and that
   generated pages should be refreshed through the maintenance process rather
   than hand-edited. Keep the marker block intact when editing this file.
 - **`openwiki/`** — generated output of the OpenWiki update run (generated

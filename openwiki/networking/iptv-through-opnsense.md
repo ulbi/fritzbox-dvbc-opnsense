@@ -3,13 +3,13 @@ type: network-runbook
 title: IPTV Streams Through OPNsense Firewall
 description: End-to-end runbook for letting FRITZ!Box 6591 Cable DVB-C IPTV (RTP) streams traverse an OPNsense firewall into the internal LAN — the port 554 pass rule, the UDP 5000-5010 rule, the 1:1 NAT between 192.168.180.0 and 192.168.178.0, the FRITZ!Box IPv4 route via the firewall WAN IP, and IPTV-client validation with OPNsense logging.
 tags: [networking, iptv, rtp, opnsense, fritzbox, firewall, runbook]
-verified:
-  - by: openwiki/0.7.3
-    at: 2026-11-02T19:30:23.660Z
 sources:
   - id: openwiki-source-23775c3de52f3ab95a13cb8b
     resource: repo://README.md
 generated: { by: "openwiki/0.7.3", at: "2026-11-02T19:30:23.660Z" }
+verified:
+  - by: openwiki/0.7.3
+    at: 2026-11-03T06:41:52.443Z
 ---
 
 # IPTV Streams Through OPNsense Firewall

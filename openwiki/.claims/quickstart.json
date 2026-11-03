@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:61a602c306cb47132b023aa88ff4f59f328dc3c6d89d1a4366007c7346f4bcf3",
+  "pageVersion": "sha256:44c0da906ac586f41d61f88e537ddeacd50cb4dde7ef517c0641b26096c735eb",
   "claims": [
     {
       "id": "claim_0aaff334f8b545cea790fabed45e6e47",
@@ -50,17 +50,27 @@
     },
     {
       "id": "claim_6e1aabf03a234221a6fa5564394f6845",
-      "statement": "Per AGENTS.md, source code and tests are authoritative while the generated openwiki/ pages are optional just-in-time context rather than required startup reading, and validation should use the narrowest quiet check that proves the changed behavior with complete failure output preserved.",
+      "statement": "Per AGENTS.md, agents must not enumerate, preload, or search wikis at task start: source code and tests are authoritative, the generated openwiki/ pages are optional just-in-time context pulled only when the user asks, unfamiliar architecture materially affects the task, or source inspection leaves an important uncertainty — and once the question is grounded, retrieval stops.",
       "evidence": [
         {
-          "resource": "repo://AGENTS.md#L5-L13",
-          "version": "repo-lines-v1:sha256:3190b4f90be816a477cd3b6158fd9fdccf1fbbbb99cd14e5eb7d77e3c450b994:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWRiNDYwNjYwZjRkNTBhMjVhY2E3Nzk2MTAwMmQzOTcwNWM2NDZkYzI2YThiZmE2NmFlNmY2OTA5NTljNjk1MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWFmYjk2MDZmNWIwZDhmNjM0YjI2MDM3OGQ2ZWNlMjUzYjVjMTQ0N2E5YmYxZDA0OTM0OTQ0MGE4YjVlYmYwOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODY1MjVmNTE0ODk5NTZiNWI5MjRmN2FmNGYyYWU2YWNkODQxYjc3ZGYxNmRkOGVkMWViZWUxMDVhOGNmY2QxOSJ9"
+          "resource": "repo://AGENTS.md#L5-L9",
+          "version": "repo-lines-v1:sha256:74148b0734d8c89d0a361dea40303663c37ccc5ff6cb434e934a454201a5a9a9:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWRiNDYwNjYwZjRkNTBhMjVhY2E3Nzk2MTAwMmQzOTcwNWM2NDZkYzI2YThiZmE2NmFlNmY2OTA5NTljNjk1MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGUxNGJmZGNmMzdhOWE0MGQ0ZWNjMWIwNWQwNzhmN2M1ZjFmMDNmZWZkYjllMjVlNTAzOTlkZWE2ZTUwYjQxNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWFmYjk2MDZmNWIwZDhmNjM0YjI2MDM3OGQ2ZWNlMjUzYjVjMTQ0N2E5YmYxZDA0OTM0OTQ0MGE4YjVlYmYwOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGM1MGE4NzVkYzkwNzM3NGE3NzBmNjI0ZDgwOWM2NDlhZTU2NWNlZjI1NDA3OTMzMmEwMjRkNGVmNTFjM2Q1NCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_e03f0bce05a24b52b54171b25f360e65",
+      "statement": "AGENTS.md prescribes just-in-time OpenWiki retrieval mechanics: use openwiki_search for context and openwiki_read for complete sections when retrieval conditions apply, ask which listed workspace to use and retry with its ID if search returns workspace_required, and fall back to reading openwiki/quickstart.md and following its links only when the retrieval tools are unavailable.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L7-L9",
+          "version": "repo-lines-v1:sha256:902d1e67255818756cb62be14ebd5c1b53aebd18fae5d5c20edacbafbb7ce33f:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDYxZGVhMjg2MzE5Y2NkOWU0MDcxOTE4Yjc1OGIxYjA1MjhmNjE2ZGQ4OTk4NDUzN2JjNGNhMTJhMjg0ZjU1YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGUxNGJmZGNmMzdhOWE0MGQ0ZWNjMWIwNWQwNzhmN2M1ZjFmMDNmZWZkYjllMjVlNTAzOTlkZWE2ZTUwYjQxNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTA1MTY5OTI5YTliMjNhOWIwMDJiYjE5MDNhYTA3ZWMxZGE0ODA1ZjY3ZTEyNTBmYzZjOTQ4MDlmMzJlMGM3ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGM1MGE4NzVkYzkwNzM3NGE3NzBmNjI0ZDgwOWM2NDlhZTU2NWNlZjI1NDA3OTMzMmEwMjRkNGVmNTFjM2Q1NCJ9"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.7.3",
-    "at": "2026-11-02T19:30:23.660Z"
+    "at": "2026-11-03T06:41:52.443Z"
   }
 }
