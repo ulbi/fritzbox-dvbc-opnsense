@@ -5,7 +5,7 @@ description: Map of the small, flat repository — the five top-level files, the
 tags: [repository-structure, documentation-first, python, no-build-infrastructure, openwiki]
 verified:
   - by: openwiki/0.7.3
-    at: 2026-11-03T06:41:52.443Z
+    at: 2026-11-04T02:00:48.716Z
 sources:
   - id: openwiki-source-8037e2358a2c4f9b2c722a11
     resource: repo://AGENTS.md
